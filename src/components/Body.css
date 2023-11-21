@@ -1,0 +1,72 @@
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.new {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 20px;
+}
+#vaccination__fields {
+  width: 100%;
+}
+.field {
+  min-height: 555;
+  max-width: 390px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.patients {
+  height: 250px;
+  width: 100%;
+}
+.field__data h4 {
+  font-weight: 500;
+  padding: 10px 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.pad {
+  padding: 0 10px 20px;
+}
+.field__data p {
+  padding: 10px;
+}
+.icons {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  #vaccination__fields {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .field {
+    padding: 0;
+  }
+  #review__fields {
+    display: flex;
+    padding: 20px;
+    width: 100vw;
+  }
+  .review {
+    height: 300px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  /*     
+    .review:nth-child(3),.review:nth-child(4){
+    display: none;
+    } */
+}
